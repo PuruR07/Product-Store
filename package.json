@@ -9,7 +9,7 @@
     "build": "npm install && npm install --prefix Front-End && npm run build --prefix Front-End",
     "start": "cross-env NODE_ENV=production node Backend/server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d Front-End/dist"
   },
   "type": "module",
   "keywords": [],
