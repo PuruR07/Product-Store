@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
   "dev": "nodemon Backend/server.js",
-  "build": "cd Front-End && npm install && npm run build",
-  "start": "cross-env NODE_ENV=production node Backend/server.js",
-  "postinstall": "cd Front-End && npm install"
+  "build": "cd Back-End/Front-End && npm install && npm run build",
+  "start": "cross-env NODE_ENV=production node Back-End/server.js",
+  "postinstall": "cd Back-End/Front-End && npm install"
   },
   "type": "module",
   "keywords": [],
