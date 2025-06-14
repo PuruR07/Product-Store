@@ -5,6 +5,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/Product-Store",
   build: {
     // no .map files, no inline maps, and no comments
     sourcemap: false,            

@@ -13,8 +13,8 @@ const Navbar = () => {
       <Flex h={16} alignItems={'center'} justifyContent={'space-between'} flexDir={{ base: 'column', md: 'row' }}>
 
         <Box
-          bgGradient="linear(to-r, #06b6d4, #3b82f6)" // cyan.400 and blue.500
-          bgClip="text"
+          // bgGradient="linear(to-r, #06b6d4, #3b82f6)" // cyan.400 and blue.500
+          // bgClip="text"
           fontSize={{ base: 22, sm: 28 }}
           fontWeight="bold"
           textTransform="uppercase"
