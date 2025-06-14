@@ -13,13 +13,13 @@ app.use(express.json());//* This will parse the JSON data in the body of the req
 app.use("/api/products", productRoutes);//* This will use the productRoutes for all the routes that start with /api/products
 if (process.env.NODE_ENV === "production") {
   app.use(
-    express.static(path.join(__dirname, "Front-End", "dist"))
+    express.static(path.join(__dirname, "..", "Front-End", "dist"))
   );
 
   // catch anything (including '/')
   app.get(/.*/, (req, res) => {
     res.sendFile(
-      path.resolve(__dirname, "Front-End", "dist", "index.html")
+    express.static(path.join(__dirname, "..", "Front-End", "dist"))
     );
   });
 }
