@@ -1,12 +1,15 @@
 {
   "name": "1_product_store",
+  "homepage": "https://PuruR07.github.io/Product-Store",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon Backend/server.js",
     "build": "npm install && npm install --prefix Front-End && npm run build --prefix Front-End",
-    "start": "cross-env NODE_ENV=production node Backend/server.js"
+    "start": "cross-env NODE_ENV=production node Backend/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "type": "module",
   "keywords": [],
