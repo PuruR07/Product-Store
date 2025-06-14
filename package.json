@@ -1,14 +1,13 @@
 {
   "name": "1_product_store",
-  "homepage": "https://PuruR07.github.io/Product-Store",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "nodemon Backend/server.js",
-  "build": "cd Back-End/Front-End && npm install && npm run build",
-  "start": "cross-env NODE_ENV=production node Back-End/server.js",
-  "postinstall": "cd Back-End/Front-End && npm install"
+    "dev": "nodemon Backend/server.js",
+    "build": "cd Backend/Front-End && npm install && npm run build",
+    "start": "cross-env NODE_ENV=production node Backend/server.js",
+    "postinstall": "cd Backend/Front-End && npm install"
   },
   "type": "module",
   "keywords": [],
@@ -22,7 +21,6 @@
     "path-to-regexp": "^6.3.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0"
+    "cross-env": "^7.0.3"
   }
 }
