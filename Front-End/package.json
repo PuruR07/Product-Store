@@ -4,12 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "npm install --prefix Front-End",
-    "dev": "nodemon Backend/server.js",
-    "build": "npm run build --prefix Front-End",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "cross-env NODE_ENV=production node Backend/server.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",

@@ -6,11 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon Backend/server.js",
-    "build": "npm run build --prefix Front-End",
-    "start": "cross-env NODE_ENV=production node Backend/server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d Front-End/dist", 
-    "postinstall": "npm install --prefix Front-End"
+  "build": "cd Front-End && npm install && npm run build",
+  "start": "cross-env NODE_ENV=production node Backend/server.js",
+  "postinstall": "cd Front-End && npm install"
   },
   "type": "module",
   "keywords": [],
