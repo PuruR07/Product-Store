@@ -18,9 +18,7 @@ if (process.env.NODE_ENV === "production") {
 
   // catch anything (including '/')
   app.get(/.*/, (req, res) => {
-    res.sendFile(
-    express.static(path.join(__dirname, "..", "Front-End", "dist"))
-    );
+    res.sendFile(path.join(__dirname, "..", "Front-End", "dist", "index.html"));
   });
 }
 
